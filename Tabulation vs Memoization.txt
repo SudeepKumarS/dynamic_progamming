@@ -1,0 +1,24 @@
+There are two different ways to store the values so that the values of a sub-problem can be reused. Here, will discuss two patterns of solving Dynamic Programming(DP) problems: 
+1. Tabulation: Bottom Up
+2. Memoization: Top Down
+
+Tabulation Vs Memoization
+1. State:
+- Tabulation: State transition relation is difficult to think
+- Memoization: State transition relation is easy to think
+
+2. Code:
+- Tabulation: Code gets complicated when a lot of conditions are required
+- Memoization: Code is easy and less complicated
+
+3. Speed:
+- Tabulation: Fast, as we directly access previous states from the table
+- Memoization: Slow due to lot of recursive calls and return statements
+
+4. Subproblem solving:
+- Tabulation: If all subproblems must be solved at least once, a bottom-up dynamic programming algorithm usually outperforms a top-down memoized algorithm by a constant factor
+- Memoization: If some subproblems in the subproblem space need not be solved at all, the memoized solution has the advantage of solving only those subproblems that are definitely required
+
+5. Table entries:
+- Tabulation: In Tabulated version, starting from the first entry, all entries are filled one by one
+- Memoization: Unlike Tabulated version, all entries of the lookup table are not necessarily filled in Memoized version. The table is filled on demand.
